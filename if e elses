@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+
+int main(){
+
+    setlocale(LC_ALL, "Portuguese");
+
+    int idade;
+    float peso;
+
+       printf("Digite sua idade e seu peso : ");
+    scanf("%d %f", &idade, &peso);
+
+    if(idade > 38 && peso > 110){
+        printf("Alto risco");
+    }
+    else if(idade > 38 && peso < 110){
+        printf("Risco Médio");
+    }
+    else if(idade <= 38 && peso > 110){
+        printf("Baixo Risco");
+    }
+    else
+        printf("Baixissimo Risco");
+
+
+    return 0;
+
+
+
+}
