@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+
+   int main (){
+	
+	setlocale(LC_ALL,"Portuguese");
+	
+	
+	float g,preco;
+	
+	printf("Informe quantos gramas:");
+	scanf("%f",&g);
+	
+	preco=(20*g)/1000;
+	
+	printf("O preço a ser pago será %2.f reais",preco);
+	
+	
+	
+	
+	
+	
+	return 0;
+	
+	
+	
+}
