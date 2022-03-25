@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+
+int main (){
+	
+	setlocale(LC_ALL,"Portuguese");
+	
+	
+    int idade,diaHoje,mesHoje,total,diasAno,mes;
+    
+    printf("Digite sua idade:");
+    scanf("%d",&idade);
+    
+    printf("Digite a data de hoje DD/MM:");
+	scanf("%d/%d",&diaHoje,&mes);
+	
+	mesHoje=(mes-1)*30;
+	diasAno=mesHoje+diaHoje;
+	total=(idade*365)+diasAno;
+
+     printf("Você tem %d anos e %d dias de vida.",idade,total);
+
+
+
+	return 0;
+
+	}
